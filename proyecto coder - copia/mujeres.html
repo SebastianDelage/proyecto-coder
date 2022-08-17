@@ -2,63 +2,207 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tienda de ropa</title>
+  <link rel="stylesheet" href="scss/syle.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <script src="https://kit.fontawesome.com/b55d7e7a93.js" crossorigin="anonymous"></script>
+  <meta name="description" content="Tienda de ropa. Ofertas Especiales. Encuentra lo que buscas">
+  <meta name="keywords"
+    content="Nike, ropa, adidas,le coq, oferta, pantalones, zapatillas, jordan, lebron, deportivo, negro, hombre, mujer, zapatillas,puma, azul, buzo, remera">
 
 
 </head>
 
 <body class="body">
-    <header class="header">
-        <h1 class="titulo">Pagina de ropa</h1>
-        <section class="div">
-            <div>
-                <a href="index.html"><img src="imagenes/coderhouse-logo.png" alt="Logo" width="50">
-            </div>
+  <header class="header">
+    <nav class="navbar navbar-expand-lg bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">ADDIDDAS</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#footer">Contacto</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="inicio sesion.html">Inicar Sesión</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Productos
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="hombres.html">Hombres</a></li>
+                <li><a class="dropdown-item" href="mujeres.html">Mujeres</a></li>
+                <li><a class="dropdown-item" href="zapatillas.html">Zapatillas</a></li>
 
-            <div>
-                <input type="text" placeholder="Buscar">
-            </div>
-        </section>
+              </ul>
+            </li>
 
-        <nav class="contenedor">
-            <ul class="lista">
-                <li><a class="link" href="hombres.html">Hombres</a></li>
-                <li><a class="link" href="mujeres.html">Mujeres</a></li>
-                <li><a class="link" href="#">Niños</a></li>
-                <li><a class="link" href="marca.html">Marca</a></label>
-                    <ul>
-                        <li><a class="link" href="#">nike</a></li>
-                        <li><a class="link" href="#">adidas</a></li>
-                    </ul>
-
-                <li><a class="link" href="formulario.html" class="inicarsesion">iniciar sesion</a> </li>
-            </ul>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Buscar</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </header>
 
 
-        </nav>
-    </header>
-    <section class="main">
-        <div class="ropa">
-            <div class="producto">
-                <a href="#"><img class="imagenes" src="imagenes/descarga (1).jpg" alt="calza"></a>
-                <button type="button" class="btn btn-outline-primary">Comprar</button></a>
-            </div>
-
+  <main class="main">
+    <section>
+      <div class="ropa">
+        <div class="card" style="width: 18rem;">
+          <img src="imagenes/buso mujer blanco.jpg" class="card-img-top" alt="buzo mujer blanco" width="250"
+            height="250">
+          <div class="card-body">
+            <h5 class="card-title">Buzo blanco mujer</h5>
+            <h3 class="card-text">250$</h3>
+            <a href="#" class="btn btn-primary">Comprar</a>
+          </div>
         </div>
 
-    <footer class="footer">
-        <div class="pie">
-            <a class="link" href="#">Sobre nosotros</a>
-            <a class="link" href="#">Contacto</a>
-            <a class="link" href="formulario.html">iniciar sesion</a>
-            <p>Sitio desarrollado por Sebastian Delage</p>
+        <div class="card" style="width: 18rem;">
+          <img src="imagenes/mujer.jpg" class="card-img-top" alt="calza joradn negra y rosa" width="250" height="250">
+          <div class="card-body">
+            <h5 class="card-title">Calza jordan</h5>
+            <h3 class="card-text">1250$</h3>
+            <a href="#" class="btn btn-primary">Comprar</a>
+          </div>
         </div>
-    </footer>
+
+        <div class="card" style="width: 18rem;">
+          <img src="imagenes/short mujer.jpg" class="card-img-top" alt="short deportivo nike naranja mujer" width="250"
+            height="250">
+          <div class="card-body">
+            <h5 class="card-title">Short deportivo mujer</h5>
+            <h3 class="card-text">2250$</h3>
+            <a href="#" class="btn btn-primary">Comprar</a>
+          </div>
+        </div>
+
+        <div class="card" style="width: 18rem;">
+          <img src="imagenes/enterizo mujer.webp" class="card-img-top" alt="conjunto deprotivo mujer yoga" width="250"
+            height="250">
+          <div class="card-body">
+            <h5 class="card-title">Conjunto para yoga</h5>
+            <h3 class="card-text">2550$</h3>
+            <a href="#" class="btn btn-primary">Comprar</a>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+          <img src="imagenes/remera larga.webp" class="card-img-top" alt="remeron largo adidas negro" width="250"
+            height="250">
+          <div class="card-body">
+            <h5 class="card-title">Remeron adidas</h5>
+            <h3 class="card-text">4250$</h3>
+            <a href="#" class="btn btn-primary">Comprar</a>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+          <img src="imagenes/pantalon mujer blanco.jpg" class="card-img-top" alt="pantalon gris mujer" width="250"
+            height="250">
+          <div class="card-body">
+            <h5 class="card-title">Pantalón de jogging</h5>
+            <h3 class="card-text">2650$</h3>
+            <a href="#" class="btn btn-primary">Comprar</a>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+          <img src="imagenes/calza mujer 2.webp" class="card-img-top" alt="calza negra mujer" width="250" height="250">
+          <div class="card-body">
+            <h5 class="card-title">Calza larga</h5>
+            <h3 class="card-text">2850$</h3>
+            <a href="#" class="btn btn-primary">Comprar</a>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+          <img src="imagenes/pantalon deportivo mujer.jpg" class="card-img-top" alt="jogging deportivo negro mujer"
+            width="250" height="250">
+          <div class="card-body">
+            <h5 class="card-title">Pantalón deportivo</h5>
+            <h3 class="card-text">5250$</h3>
+            <a href="#" class="btn btn-primary">Comprar</a>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+          <img src="imagenes/impermeable.jpg" class="card-img-top" alt="impermeable colorido" width="250" height="250">
+          <div class="card-body">
+            <h5 class="card-title">Buzo nike</h5>
+            <h3 class="card-text">2750$</h3>
+            <a href="#" class="btn btn-primary">Comprar</a>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+          <img src="imagenes/pantalon impermeable.jpg" class="card-img-top" alt="pantalon impermeable nike negro"
+            width="250" height="250">
+          <div class="card-body">
+            <h5 class="card-title">Pantalón impermeable nike</h5>
+            <h3 class="card-text">2590$</h3>
+            <a href="#" class="btn btn-primary">Comprar</a>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+          <img src="imagenes/jogging blanco.jpg" class="card-img-top" alt="jogging blanco mujer" width="250"
+            height="250">
+          <div class="card-body">
+            <h5 class="card-title">Jogging blanco</h5>
+            <h3 class="card-text">2502$</h3>
+            <a href="#" class="btn btn-primary">Comprar</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="pie-pagina">
+      <div class="grupo-1">
+        <div class="box">
+          <figure>
+            <a href="#">
+              <img src="img/logotipo-sleedw.svg" alt="Logo de SLee Dw">
+            </a>
+          </figure>
+        </div>
+        <div class="box">
+          <h2>SOBRE NOSOTROS</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, ipsa?</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, ipsa?</p>
+        </div>
+        <div class="box">
+          <h2>SIGUENOS</h2>
+          <div class="red-social">
+            <a name="footer" href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-instagram"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-youtube"></a>
+          </div>
+        </div>
+      </div>
+      <div class="grupo-2">
+        <small>&copy; 2022 <b>Sebastian Delage</b> - Todos los Derechos Reservados.</small>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous">
+  </script>
+
 
 </body>
 
